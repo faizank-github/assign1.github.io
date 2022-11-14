@@ -1,0 +1,456 @@
+<html lang="en">
+
+<head>
+    <title>CA 308 ASSIGNMENT 1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="script" href="js.js">
+    <style>
+        * {
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 20px;
+            text-align: center;
+            background: #48c8ff;
+            color: white;
+        }
+
+        /* Increase the font size of the heading */
+        .header h1 {
+            font-size: 50px;
+            text-align: left;
+        }
+
+        .logo {
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 30px;
+        }
+
+        .abtbca {
+            color: #333;
+            font-size: x-large;
+            padding-left: 270px;
+            padding-right: 50px;
+            font-style: bold;
+            text-align: left;
+
+        }
+
+
+
+
+
+        /* Style the top navigation bar */
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        /* Right-aligned link */
+        .navbar a.right {
+            float: right;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        /* Style of Details */
+        .detail {
+            padding: 11px;
+            width: 100%;
+            text-align: left;
+            font-size: large;
+        }
+
+        /* Column container */
+        .row {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            -ms-flex: 30%;
+            /* IE10 */
+            flex: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+
+        /* Main column */
+        .main {
+            -ms-flex: 70%;
+            /* IE10 */
+            flex: 70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        /* first */
+        .first {
+            /* background-color: #333; */
+            width: 1000px;
+            height: 200px;
+            padding: auto;
+        }
+
+        /* Video */
+        .Video1 {
+            /* background-color: #333; */
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* TIME TABLE */
+        .TIME_TABLE {
+            background-color: #333;
+            width: 100%;
+            padding: 20px;
+        }
+
+        th,
+        td {
+            background-color: #ffffff;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* first image */
+        .first {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .di {
+            color: rgb(255, 255, 255);
+        }
+
+        .table1 {
+            border: 6px solid #ccc;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        .auto-style1 {
+            width: 175px;
+        }
+
+        .auto-style2 {
+            width: 247px;
+        }
+
+
+        /* Footer */
+        .footer {
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            background: #ddd;
+            background-color: rgb(235, 201, 33);
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 700px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+
+<script>
+    let mybutton = document.getElementById("myBtn");
+
+
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+</script>
+
+</head>
+
+<body>
+    <div class="navbar">
+
+        <a href="https://www.iul.ac.in/">Home</a>
+        <a href="https://iul.ac.in/About/Overview/Overview.aspx">About</a>
+        <a href="https://iul.ac.in/CA/Student.aspx">Student's Zone</a>
+
+        <a href="https://ilizone.iul.ac.in/" class="right">ILI</a>
+    </div>
+    <!-- Header Image Style  -->
+    <div class="header" style="background-image: url('https://media-exp1.licdn.com/dms/image/C4E16AQHC2_eopf1yng/profile-displaybackgroundimage-shrink_200_800/0/1628179247175?e=2147483647&v=beta&t=_QZB7aUSSkD_AHVdi4GDv5nsktg-qluRJ906zboxZ9w'); 
+          
+          background-size: cover;">
+
+        <h1 style="color: rgb(0, 0, 0);"><img src="https://iul.ac.in/img/IntegralUniversityLogo.jpg"
+                class="logo">BACHELOR
+            OF COMPUTER APPLICATION </h1>
+        <p class="abtbca">Focusing on expertise in communication systems and information technology and their effective
+            application in business issues, this undergraduate program covers various aspects of compute applications
+            and integrates the latest industry developments in the course curriculum. The graduates of the program have
+            a solid foundation in
+            industrial computing or important aspects of computer science and analyze and optimize the use of latest
+            technologies in the business environment. They are well-equipped to work as professionals in the fields of
+            software development, design and implementation.</p>
+    </div>
+
+    <div class="row">
+        <div class="side">
+            <h2>Benefits of doing BCA:</h2>
+            <div class="first" style="height: 250px; ">
+                <a
+                    href="https://medium.com/@student18admission/complete-guide-for-bca-admission-bca-course-18ef6933c69d">
+                    <img alt="Benefits of doing BCA" src="https://miro.medium.com/max/1024/0*bMB75IZNethEtkR3.png"
+                        height="100%">
+                </a>
+            </div>
+            <h2>More About Integral University</h2>
+            <p>How Integral University Promotes Excellence</p>
+
+            <div class="Video1" style="height: 255px;">
+                <iframe src="videoplayback (1).mp4" frameborder="0" width="100%" height="100%"></iframe>
+            </div><br>
+            <p>The Campus of Integral University</p>
+            <div class="Video1" style="height: 255px;">
+                <iframe src="videoplayback.mp4" frameborder="0" width="100%" height="100%"></iframe>
+            </div><br>
+
+        </div>
+        <div class="main">
+            <h2>TIME TABLE</h2>
+            <div class="TIME_TABLE" style="height: 910px; ">
+                <table style="text-align:center;">
+
+                    <head>
+                        <tr style="font-size:17px; ">
+                            <th>Days</th>
+                            <th>1 Period<br>9:00-9:50</th>
+                            <th>2 Period<br>9:50-10:40</th>
+                            <th>3 Period<br>10:40-11:30</th>
+                            <th>4 Period<br>11:30-12:20</th>
+                            <th> BREAK </th>
+                            <th>5 Period<br>1:30-2:20</th>
+                            <th>6 Period<br>2:20-3:10</th>
+                            <th>7 Period<br>3:10-4:00</th>
+                        </tr>
+                    </head>
+
+                    <tr style="font-size:12px;">
+                        <th>Monday</th>
+                        <td>CA-301<br><b>Computer<br>Graphics<br>and Multimedia<br>Application</b><br>Malik Shahzad
+                            Ahmad Iqbal<br><b>LT-13</b></td>
+                        <td>CA-302<br><b>UNIX and<br>Shell<br>Programming</b><br>Arshad Ahmad<br><b>LT-13</b></td>
+                        <td>CA-304<br><b>WEB<br>Designing<br>Concept</b><br>Nashra<br>Javed<br><b>LT-13</b></td>
+                        <td>CA-307<b>/Image<br>Processing/</b>G1-Mohd<br>Suhaib K.<br><b>(CA FLT-3)/</b>G2-Qazi<br>Saeed
+                            Ahmed<b>(LT-13)</b><br>CA-308/Algorithm<br>G4-Md.Khalid Jamal<br><b>(LT-8)</b></td>
+                        <td rowspan="6"> <b> LUNCH BREAK 12:20-1:30 </b> </td>
+                        <td>CA-311<br><b>Web<br>Designing Lab</b>/G2<br>Mohd Haleem<b>(CA-2)/</b><br>G2-Nashra
+                            Javed<b>(CA-2)</b></td>
+                        <td>CA-312<br><b>Computer<br>Graphics Lab</b>/G1<br>Malik Shahzad<br>Ahmad<br>Iqbal<b>(CA-6)</b>
+                        </td>
+                        <td>CA-312<br><b>Computer<br>Graphics Lab</b>/G1<br>Malik Shahzad<br>Ahmad<br>Iqbal<b>(CA-6)</b>
+                        </td>
+                    </tr>
+
+                    <tr style="font-size:12px;">
+                        <th>Tuesday</th>
+                        <td>CA-307<b>/Image<br>Processing/</b>G1-Mohd<br>Suhaib K.<br><b>(CA FLT-3)/</b>G2-Qazi<br>Saeed
+                            Ahmed<b>(LT-13)</b><br>CA-308/Algorithm<br>G4-Md.Khalid Jamal<br><b>(LT-8)</b></td>
+                        <td>CA-310<br><b>UNIX and<br>Shell<br>Programming Lab/</b>/G1<br>Adnan Afaq<br><b>(CA-7)</b>
+                        </td>
+                        <td>CA-310<br><b>UNIX and<br>Shell<br>Programming Lab/</b>/G1<br>Adnan Afaq<br><b>(CA-7)</b>
+                        </td>
+                        <td>CA-310<br><b>UNIX and<br>Shell<br>Programming Lab/</b>/G1<br>Adnan Afaq<br><b>(CA-7)</b>
+                        </td>
+                        <!-- <td> </td> -->
+                        <td></td>
+                        <td>CA-304<br><b>WEB<br>Designing<br>Concepts</b><br>Nashra<br>Javed<br><b>(BNLT-8)</b></td>
+                        <td>CA-301<br><b>Computer<br>Graphics<br>and Multimedia<br>Application</b><br>Malik Shahzad
+                            Ahmad Iqbal<br><b>(BNLT-8)</b></td>
+                    </tr>
+
+                    <tr style="font-size:12px;">
+                        <th>Wednesday</th>
+                        <td>CA-303<br><b>Data Communication<br>and Computer<br>Networks</b><br><b>Dr.</b><br>Ayan
+                            Mustafa Khan<br><b>(BNLT-2)</b></td>
+                        <td>CA-303<br><b>Data Communication<br>and Computer<br>Networks</b><br><b>Dr.</b><br>Ayan
+                            Mustafa Khan<br><b>(BNLT-2)</b></td>
+                        <td><b><br>PPP</b><b><br>APTTITUDE</b><br>CCGD-SR<br><b>(BNLT-1)</b></td>
+                        <td></td>
+                        <!-- <td> </td> -->
+                        <td> </td>
+                        <td>CA-302<br><b>UNIX and<br>Shell<br>Programming</b><br>Arshad Ahmad<br><b>(BNLT-8)</b></td>
+                        <td>CA-304<b><br>Web Designing<br>Concepts</b><br>Nashra Javed<br><b>(BNLT-8)</b></td>
+                    </tr>
+
+                    <tr style="font-size:12px;">
+                        <th>Thursday</th>
+                        <td>CA-307<b>/Image<br>Processing/</b>G1-Mohd<br>Suhaib K.<br><b>(LT-8)/</b>G2-Qazi<br>Saeed
+                            Ahmed<b>(BNLT-9)</b><br>CA-308/Algorithm<br>G4-Md.Khalid Jamal<br><b>(LT-13)</b></td>
+                        <td>CA-304<b><br>Web Designing<br>Concepts</b><br>Nashra Javed<br><b>(BNLT-10)</b></td>
+                        <td>CA-302<br><b>UNIX and<br>Shell<br>Programming</b><br>Arshad Ahmad<br><b>(BNLT-1)</b></td>
+                        <td> </td>
+                        <!-- <td> </td> -->
+                        <td>CA-301<br><b>Computer<br>Graphics<br>and Multimedia<br>Application</b><br>Malik Shahzad
+                            Ahmad Iqbal<br><b>(BNLT-7)</b></td>
+                        <td><b><br>PPP</b><b><br>APTTITUDE</b><br>CCGD-SA<br><b>(BNLT-7)</b></td>
+                        <td> </td>
+                    </tr>
+
+                    <tr style="font-size:12px;">
+                        <th>Friday</th>
+                        <td>CA-311<b>Web<br>Designing Lab</b>/G1<br>Mohd Haleem<b>(CA-2)/<br>G1-Nashra
+                                Javed<b>(CA-2)</b><b><br>--------------------</b><br>CA-310<br><b>UNIX<br>Programming
+                                    Lab</b>/G2<br>Adnan Afaq<b><br>(CA-4)</b></td>
+                        <td>CA-311<b>Web<br>Designing Lab</b>/G1<br>Mohd Haleem<b>(CA-2)/<br>G1-Nashra
+                                Javed<b>(CA-2)</b><b><br>--------------------</b><br>CA-310<br><b>UNIX<br>Programming
+                                    Lab</b>/G2<br>Adnan Afaq<b><br>(CA-4)</b></td>
+                        <td>CA-311<b>Web<br>Designing Lab</b>/G1<br>Mohd Haleem<b>(CA-2)/<br>G1-Nashra
+                                Javed<b>(CA-2)</b><b><br>------------------</b><br>CA-310<br><b>UNIX<br>Programming
+                                    Lab</b>/G2<br>Adnan Afaq<b><br>(CA-4)</b></td>
+                        <td>CA-303<br><b>Data Communication<br>and Computer<br>Networks</b><br><b>Dr.</b><br>Ayan
+                            Mustafa Khan<br><b>(FLT-1)</b></td>
+                        <!-- <td> </td> -->
+                        <td> </td>
+                        <td>CA-312<br><b>Computer<br>Graphics Lab</b>/G2<br>Malik Shahzad<br>Ahmad<br>Iqbal<b>(CA-6)</b>
+                        </td>
+                        <td>CA-312<br><b>Computer<br>Graphics Lab</b>/G2<br>Malik Shahzad<br>Ahmad<br>Iqbal<b>(CA-6)</b>
+                        </td>
+                    </tr>
+
+                    <tr style="font-size:12px;">
+                        <th>Saturday</th>
+                        <td>CA-303<br><b>Data Communication<br>and Computer<br>Networks</b><br><b>Dr.</b><br>Ayan
+                            Mustafa Khan<br><b>(BNLT-10)</b></td>
+                        <td>CA-302<br><b>UNIX and<br>Shell<br>Programming</b><br>Arshad Ahmad<br><b>(BNLT-10)</b></td>
+                        <td>CA-301<br><b>Computer<br>Graphics<br>and Multimedia<br>Application</b><br>Malik Shahzad
+                            Ahmad Iqbal<br><b>LT-13</b></td>
+                        <td>CA-307<b>/Image<br>Processing/</b>G1-Mohd<br>Suhaib K.<br><b>(BNLT-9)/</b>G2-Qazi<br>Saeed
+                            Ahmed<b>(BNLT-10)</b><br>CA-308/Algorithm<br>G4-Md.Khalid Jamal<br><b>(BNLT-8)</b></td>
+                        <!-- <td> </td> -->
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" style="background-image: url('https://eatris.eu/wp-content/uploads/2022/05/EATRIS-cover-shapes-1360x400.png');
+    background-size: cover;">
+        <h2 class="di">Departmental Infrastructure</h2>
+        <table class="table1" border="4">
+            <thead>
+                <tr>
+                    <th scope="col" class="auto-style1">S.No.</th>
+                    <th scope="col" class="auto-style2">Learning Resources</th>
+                    <th scope="col">Available Resources</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="S.No." class="auto-style1">1.</td>
+                    <td data-label="Learning Resources" class="auto-style2"> Departmental Library </td>
+                    <td data-label="Available Resources">Total books-3667, Journals-18, Professional Magazines-6,
+                        Newspaper-3</td>
+                </tr>
+                <tr>
+                    <td data-label="S.No." class="auto-style1">2.</td>
+                    <td data-label="Learning Resources" class="auto-style2">Computer Lab</td>
+                    <td data-label="Available Resources">Total No. of Computers-60</td>
+                </tr>
+                <tr>
+                    <td data-label="S.No." class="auto-style1">3.</td>
+                    <td data-label="Learning Resources" class="auto-style2">University Incubation Centre</td>
+                    <td data-label="Available Resources">Centre for Incubation &amp; Entrepreneurship Development (CIED)
+                    </td>
+                </tr>
+                <tr>
+                    <td data-label="S.No." class="auto-style1">4.</td>
+                    <td data-label="Learning Resources" class="auto-style2">ICT Enabled Classrooms</td>
+                    <td data-label="Available Resources">5 (Smart Room-1, Smart Room-2, BNLT-23,24,25)</td>
+                </tr>
+                <tr>
+                    <td data-label="S.No." class="auto-style1">5.</td>
+                    <td data-label="Learning Resources" class="auto-style2">Lecture Rooms</td>
+                    <td data-label="Available Resources">13</td>
+                </tr>
+                <tr>
+                    <td data-label="S.No." class="auto-style1">6.</td>
+                    <td data-label="Learning Resources" class="auto-style2">Seminar Hall</td>
+                    <td data-label="Available Resources">1</td>
+                </tr>
+                <tr>
+                    <td data-label="S.No." class="auto-style1">7.</td>
+                    <td data-label="Learning Resources" class="auto-style2">Faculty Rooms</td>
+                    <td data-label="Available Resources">7</td>
+                </tr>
+                <tr>
+                    <td data-label="S.No." class="auto-style1">8.</td>
+                    <td data-label="Learning Resources" class="auto-style2">Internet Connections</td>
+                    <td data-label="Available Resources">Wi-Fi Enabled Campus, LAN Supported Smart Classrooms/Classrooms
+                        and
+                        Faculty rooms</td>
+                </tr>
+                <tr>
+                    <td data-label="S.No." class="auto-style1">9.</td>
+                    <td data-label="Learning Resources" class="auto-style2">Teaching Aid</td>
+                    <td data-label="Available Resources">6 LCD Projectors, 1 Photocopier</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+   <center> <button onclick="topFunction()" id="myBtn" title="Go to top">Go to Top</button></center>
+   
+    
+
+</body>
+
+</html>
